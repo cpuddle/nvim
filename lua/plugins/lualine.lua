@@ -4,7 +4,7 @@ return {
     config = function()
         require('lualine').setup({
             options = {
-                theme = 'gruvbox',
+                theme = 'gruvbox_dark',
                 icons_enabled = true,
                 component_separators = { left = '', right = ''},
                 section_separators = { left = '', right = ''},
@@ -25,15 +25,15 @@ return {
                 lualine_a = {'mode'},
                 lualine_b = {'branch', 'diff', 'diagnostics'},
                 lualine_c = {'filename'},
-                lualine_x = {'encoding', 'fileformat', 'filetype'},
+                lualine_x = {'encoding', 'filetype'},
                 lualine_y = {'progress'},
                 lualine_z = {'location'}
             },
             inactive_sections = {
                 lualine_a = {},
                 lualine_b = {},
-                lualine_c = {'filename'},
-                lualine_x = {'location'},
+                lualine_c = {},
+                lualine_x = {},
                 lualine_y = {},
                 lualine_z = {}
             },
